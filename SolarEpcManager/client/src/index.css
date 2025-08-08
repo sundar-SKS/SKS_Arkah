@@ -1,0 +1,113 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --background: hsl(0, 0%, 100%);
+  --foreground: hsl(240, 10%, 3.9%);
+  --muted: hsl(240, 4.8%, 95.9%);
+  --muted-foreground: hsl(240, 3.8%, 46.1%);
+  --popover: hsl(0, 0%, 100%);
+  --popover-foreground: hsl(240, 10%, 3.9%);
+  --card: hsl(0, 0%, 100%);
+  --card-foreground: hsl(240, 10%, 3.9%);
+  --border: hsl(240, 5.9%, 90%);
+  --input: hsl(240, 5.9%, 90%);
+  --primary: hsl(262, 83%, 58%);
+  --primary-foreground: hsl(210, 40%, 98%);
+  --secondary: hsl(240, 4.8%, 95.9%);
+  --secondary-foreground: hsl(240, 5.9%, 10%);
+  --accent: hsl(240, 4.8%, 95.9%);
+  --accent-foreground: hsl(240, 5.9%, 10%);
+  --destructive: hsl(0, 84.2%, 60.2%);
+  --destructive-foreground: hsl(60, 9.1%, 97.8%);
+  --ring: hsl(262, 83%, 58%);
+  --radius: 0.5rem;
+  
+  /* Arkah Energy custom colors */
+  --arkah-primary: hsl(262, 83%, 58%);
+  --arkah-secondary: hsl(271, 91%, 65%);
+  --arkah-accent: hsl(262, 90%, 50%);
+  --arkah-dark: hsl(217, 19%, 27%);
+  --arkah-medium: hsl(213, 20%, 42%);
+}
+
+.dark {
+  --background: hsl(240, 10%, 3.9%);
+  --foreground: hsl(0, 0%, 98%);
+  --muted: hsl(240, 3.7%, 15.9%);
+  --muted-foreground: hsl(240, 5%, 64.9%);
+  --popover: hsl(240, 10%, 3.9%);
+  --popover-foreground: hsl(0, 0%, 98%);
+  --card: hsl(240, 10%, 3.9%);
+  --card-foreground: hsl(0, 0%, 98%);
+  --border: hsl(240, 3.7%, 15.9%);
+  --input: hsl(240, 3.7%, 15.9%);
+  --primary: hsl(262, 83%, 58%);
+  --primary-foreground: hsl(210, 40%, 98%);
+  --secondary: hsl(240, 3.7%, 15.9%);
+  --secondary-foreground: hsl(0, 0%, 98%);
+  --accent: hsl(240, 3.7%, 15.9%);
+  --accent-foreground: hsl(0, 0%, 98%);
+  --destructive: hsl(0, 62.8%, 30.6%);
+  --destructive-foreground: hsl(0, 0%, 98%);
+  --ring: hsl(262, 83%, 58%);
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply font-sans antialiased bg-background text-foreground;
+  }
+}
+
+@layer utilities {
+  .text-arkah-primary {
+    color: hsl(262, 83%, 58%);
+  }
+  .text-arkah-secondary {
+    color: hsl(271, 91%, 65%);
+  }
+  .text-arkah-accent {
+    color: hsl(262, 90%, 50%);
+  }
+  .text-arkah-dark {
+    color: hsl(217, 19%, 27%);
+  }
+  .text-arkah-medium {
+    color: hsl(213, 20%, 42%);
+  }
+  
+  .bg-arkah-primary {
+    background-color: hsl(262, 83%, 58%);
+  }
+  .bg-arkah-secondary {
+    background-color: hsl(271, 91%, 65%);
+  }
+  .bg-arkah-accent {
+    background-color: hsl(262, 90%, 50%);
+  }
+  .bg-arkah-dark {
+    background-color: hsl(217, 19%, 27%);
+  }
+  .bg-arkah-medium {
+    background-color: hsl(213, 20%, 42%);
+  }
+  
+  .border-arkah-primary {
+    border-color: hsl(262, 83%, 58%);
+  }
+  .border-arkah-accent {
+    border-color: hsl(262, 90%, 50%);
+  }
+  
+  .hover\:bg-arkah-secondary:hover {
+    background-color: hsl(271, 91%, 65%);
+  }
+  .hover\:text-arkah-secondary:hover {
+    color: hsl(271, 91%, 65%);
+  }
+}
